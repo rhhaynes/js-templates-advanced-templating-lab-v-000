@@ -28,7 +28,7 @@ function updateRecipe(){
   };
   for (let i=0; i<5; i++){recipe.ingredients.push( document.getElementsByName('ingredients')[i].value )}
   const template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
-  document.getElementById('main').innerHTML += template(recipe);
+  document.getElementById('main').innerHTML = template(recipe);
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
