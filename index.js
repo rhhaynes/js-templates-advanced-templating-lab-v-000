@@ -10,7 +10,7 @@ function displayEditForm(){
 }
 
 function createRecipe(){
-  const recipe = {
+  let recipe = {
     name: document.getElementsByName('name')[0].value,
     description: document.getElementsByName('description')[0].value,
     ingredients: []
@@ -21,7 +21,7 @@ function createRecipe(){
 }
 
 function updateRecipe(){
-  const recipe = {
+  let recipe = {
     name: document.getElementsByName('name')[0].value,
     description: document.getElementsByName('description')[0].value,
     ingredients: []
