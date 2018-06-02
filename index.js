@@ -22,14 +22,14 @@ function createRecipe(){
 
 function updateRecipe(){
   createRecipe();
-  // const recipe = {
-  //   name: document.getElementsByName('name')[0].value,
-  //   description: document.getElementsByName('description')[0].value,
-  //   ingredients: []
-  // };
-  // for (let i=0; i<5; i++){recipe.ingredients.push( document.getElementsByName('ingredients')[i].value )}
-  // const template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
-  // document.getElementById('main').innerHTML = template(recipe);
+  const recipe = {
+    name: document.getElementsByName('name')[0].value,
+    description: document.getElementsByName('description')[0].value,
+    ingredients: []
+  };
+  for (let i=0; i<5; i++){recipe.ingredients.push( document.getElementsByName('ingredients')[i].value )}
+  const template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
+  document.getElementById('main').innerHTML = template(recipe);
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
